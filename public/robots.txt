@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://unstrung.benrichardson.dev/sitemap.xml
