@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// Copyright (C) 2026 Ben Richardson — https://benrichardson.dev
+// Additional terms under AGPL-3.0 section 7(b) apply; see ADDITIONAL-TERMS.md.
 // `vitest/config` rather than `vite` so the `test` block typechecks — tsc covers
 // tests/ here, and vite's own defineConfig has no idea what `test` is.
 import { defineConfig } from 'vitest/config';

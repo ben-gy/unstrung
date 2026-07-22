@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Cut words out of one long strand of letters — every cut splices the ends together, and a word that spans the seam scores double.",
+  "license": "AGPL-3.0-or-later",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
