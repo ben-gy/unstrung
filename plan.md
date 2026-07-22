@@ -1,5 +1,22 @@
 # Game Plan: Unstrung
 
+> **This is the plan as written BEFORE the balance sim ran, and the sim overruled it five times.**
+> It is kept unedited as a record of what was predicted. What actually shipped differs in three
+> load-bearing ways, all forced by measurement (see `tests/balance.test.ts` and
+> `logs/2026-07-22-unstrung.md`):
+>
+> 1. **The strand is not consumed, it is a ribbon.** Fresh thread — a guaranteed short word plus spool
+>    — is spliced in AT the cut, so the board stays a constant, phone-sized ~26 tiles. As planned, a
+>    round lasted **3.7 cuts** and seat 0 won 90–95%.
+> 2. **Everyone gets a fixed number of cuts**, rather than playing until the strand runs out. The
+>    original ending made the ply count frequently ODD, which handed seat 0 a literal extra turn.
+> 3. **A seam scores ×3, not ×2**, and that multiplier is what carries the game's fairness rather than
+>    being flavour: ×1 → seat 0 wins 77%, ×2 → 63%, ×3 → 52%.
+>
+> Consequently the modes shipped as Strand (1×26, min 3, max 5, 12 cuts), Deepcut (1×30, min 4, max 6,
+> 10 cuts) and Twinfold (2×14, min 3, max 5, 12 cuts), with cuts-per-player scaled down as the table
+> grows so a four-player round is not four times as long.
+
 ## Overview
 - **Name:** Unstrung
 - **Repo name:** unstrung
