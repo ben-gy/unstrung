@@ -27,6 +27,7 @@ import {
   setRoomInUrl,
 } from '@ben-gy/game-engine/lobby';
 import { resolveName } from '@ben-gy/game-engine/identity';
+import { mountFeedback } from './feedback';
 
 import { el } from './dom';
 import { allModes, modeOf, turnsFor, type Mode } from './modes';
@@ -51,6 +52,7 @@ footer.innerHTML =
   'Built by <a href="https://benrichardson.dev/" target="_blank" rel="noopener">benrichardson.dev</a> · ' +
   '<a href="https://lab.benrichardson.dev" target="_blank" rel="noopener">more games, tools &amp; sites</a>';
 app.replaceChildren(main, footer);
+mountFeedback();
 
 const store = createStore(SLUG);
 const sfx = createSfx(store.get<boolean>('muted', false) ?? false);
